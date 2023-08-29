@@ -64,7 +64,8 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Project.sql" />
     <Build Include="dbo\Tables\ProjectDetail.sql" />
-    <Build Include="dbo\Tables\PlanElevationReferance.sql" />
     <Build Include="dbo\Tables\ProjectGroup.sql" />
+    <Build Include="dbo\Tables\PlanElevationText.sql" />
+    <Build Include="dbo\Tables\PlanElevationReference.sql" />
   </ItemGroup>
 </Project>

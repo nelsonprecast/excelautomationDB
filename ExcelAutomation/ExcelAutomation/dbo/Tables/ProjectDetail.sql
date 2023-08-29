@@ -3,10 +3,10 @@
     [ProjectId]               INT             NOT NULL,
     [WD]                      NVARCHAR (50)   NULL,
     [ItemName]                NVARCHAR (100)  NOT NULL,
-    [DispositionSpecialNote]  NVARCHAR (1000) NOT NULL,
+    [DispositionSpecialNote]  NVARCHAR (MAX)  NULL,
     [DetailPage]              NVARCHAR (50)   NULL,
     [TakeOffColor]            NVARCHAR (50)   NULL,
-    [Length]                  NVARCHAR (50)   NOT NULL,
+    [Length]                  NVARCHAR (50)   NULL,
     [Width]                   NVARCHAR (50)   NULL,
     [Height]                  NVARCHAR (50)   NULL,
     [Pieces]                  NVARCHAR (50)   NULL,
@@ -26,4 +26,6 @@
     CONSTRAINT [PK_ProjectDetail] PRIMARY KEY CLUSTERED ([ProjectDetailId] ASC),
     CONSTRAINT [FK_ProjectDetail_Project] FOREIGN KEY ([ProjectId]) REFERENCES [dbo].[Project] ([ProjectId])
 );
+
+
 

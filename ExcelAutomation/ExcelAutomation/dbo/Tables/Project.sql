@@ -7,6 +7,12 @@
     [LineItemTotal] NVARCHAR (50)   NULL,
     [RevisionDate]  DATETIME        NULL,
     [ContactSpecs]  NVARCHAR (1000) NULL,
+    [Notes]         NVARCHAR (MAX)  NULL,
+    [OpportunityId] NVARCHAR (MAX)  NULL,
+    [AccountName]   NVARCHAR (MAX)  NULL,
+    [Status]        NVARCHAR (10)   NULL,
     CONSTRAINT [PK_Project] PRIMARY KEY CLUSTERED ([ProjectId] ASC)
 );
+
+
 
